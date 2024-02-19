@@ -1,0 +1,36 @@
+// With if else 
+
+#include <stdio.h>
+int main()
+{
+    int num;
+    scanf("%d",&num);
+    if(num%2==0)
+        {
+        printf("The number is Even");
+    }
+    else
+        {
+        printf("The number is Odd");
+    }
+}
+
+
+//Without if else and with switch case
+
+#include <stdio.h>
+int main()
+{
+    int num;
+    scanf("%d",&num);
+    switch(num%2)
+    {
+    case 0:
+        printf("The Number is Even");
+        break;
+
+    default:
+        printf("The Number is Odd");
+    }
+    return 0;
+}
