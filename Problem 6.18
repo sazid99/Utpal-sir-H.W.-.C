@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main(){
+    float marks;
+    scanf("%f",&marks);
+    if(marks<=100 && marks>=80)
+    {
+    printf("First Division");
+    }
+    else if(marks<=79 && marks>=60)
+    {
+    printf("Second Division");
+    }
+    else if(marks<=60)
+    {
+    printf("Third Division");
+    }
+    else
+    {
+    printf("Enter a marks from 0-100");
+    }
+}
