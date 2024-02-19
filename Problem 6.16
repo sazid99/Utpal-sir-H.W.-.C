@@ -31,5 +31,9 @@ int main(){
     case 7:
     printf("Sunday");
     break;
+
+	default:
+    printf("Enter digit 1-7");
+    break;
     }
 }
