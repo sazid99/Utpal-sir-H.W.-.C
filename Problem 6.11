@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main(){
+    int x,y,z,total;
+    scanf("%d %d %d",&x,&y,&z);
+    if(x+y+z==180)
+        {
+        printf("The side is Right Angled triangle");
+        }
+    else
+        {
+        printf("The side is not Right angled Triangle");
+        }
+
+}
