@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main()
+{
+    int a,b,c,d,m,n;
+    float x1,x2;
+    scanf("%d %d %d %d %d %d",&a,&b,&c,&d,&m,&n);
+    if(a*d-c*b!=0)
+    {
+        x1=(m*d-b*n)/(a*d-c*b);
+        x2=(n*a-m*c)/(a*d-c*b);
+
+        printf("The value of x1 is: %f\n",x1);
+        printf("The value of x2 is: %f\n",x2);
+    }
+    else
+    {
+        printf("ad-cb=0 \nPlease enter a valid number.");
+    }
+
+}
