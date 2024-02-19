@@ -1,0 +1,75 @@
+#include <stdio.h>
+int main(){
+    int price,choice;
+    float percent, amount;
+    printf("Enter your purchase amount: ");
+    scanf("%d",&price);
+    if(price<=100 && price>=0)
+        printf("Which one? \n1.Mili cloth \n2.Handloom item\n");
+        scanf("%d",&choice);
+        
+        switch(choice)
+        {
+        case 1:
+        percent= (0/100)*price;
+        amount= price-percent;
+        printf("Amount to be paid: %f",amount);
+        
+        case 2:
+        percent= (5.0/100)*price;
+        amount= price-percent;
+        printf("Amount to be paid: %f",amount);
+        }
+     
+    if(price<=200 && price>=101)
+        printf("Which one? \n1.Mili cloth \n2.Handloom item\n");
+        scanf("%d",&choice);
+        
+        switch(choice)
+        {
+        case 1:
+        percent= (5.0/100)*price;
+        amount= price-percent;
+        printf("Amount to be paid: %f",amount);
+        
+        case 2:
+        percent= (7.5/100)*price;
+        amount= price-percent;
+        printf("Amount to be paid: %f",amount);
+        }  
+        
+    if(price<=300 && price>=201)
+        printf("Which one? \n1.Mili cloth \n2.Handloom item\n");
+        scanf("%d",&choice);
+        
+        switch(choice)
+        {
+        case 1:
+        percent= (7.5/100)*price;
+        amount= price-percent;
+        printf("Amount to be paid: %f",amount);
+        
+        case 2:
+        percent= (10.0/100)*price;
+        amount= price-percent;
+        printf("Amount to be paid: %f",amount);
+        }
+        
+    if(price>=300)
+        printf("Which one? \n1.Mili cloth \n2.Handloom item\n");
+        scanf("%d",&choice);
+        
+        switch(choice)
+        {
+        case 1:
+        percent= (10.0/100)*price;
+        amount= price-percent;
+        printf("Amount to be paid: %f",amount);
+        
+        case 2:
+        percent= (15.0/100)*price;
+        amount= price-percent;
+        printf("Amount to be paid: %f",amount);
+        } 
+    return 0;     
+}
