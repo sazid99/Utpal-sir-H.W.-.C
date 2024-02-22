@@ -1,0 +1,53 @@
+#include <stdio.h>
+int main(){
+    float unit,bill,sub;
+    char name[50];
+    
+    printf("Name of user: ");
+    gets(name);
+    printf("\nNumber of Units: ");
+    scanf("%f",&unit);
+    if(unit<=200)
+        {
+        bill=unit*0.8;
+            if(bill>400)
+                {
+                sub=(15/100)*bill;
+                }
+            else
+                {
+                sub=0;
+                }    
+        }
+    else if(unit>200 && unit<=300)
+        {
+        bill=unit*0.9;
+            if(bill>400)
+                {
+                sub=(15/100)*bill;
+                }
+            else
+                {
+                sub=0;
+                }    
+        }
+    else if(unit>300)
+        {
+        bill=unit*1.0;
+            if(bill>400)
+                {
+                sub=(15/100)*bill;
+                }
+            else
+                {
+                sub=0;
+                }    
+        }
+    else
+        {
+        printf("Enter a valid name & unit input.");
+        }            
+    printf("\nName: %s",name); 
+    printf("\n\nAmount to be paid: %f Taka",bill+100);   
+    printf("\n\nAmount to be paid: %f Taka",bill+sub+100);    
+}
