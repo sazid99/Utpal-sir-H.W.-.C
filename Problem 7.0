@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main(){
+    int n,r, sum=0, temp;
+    scanf("%d",&n);
+    temp=n;
+    while(temp>0)
+    {
+        int t=temp%10;
+        sum =sum*10 +t;
+        temp /=10;
+    }
+    if(n==sum){
+        printf("Yes");
+    }
+    else{
+        printf("No");
+    }
+}
