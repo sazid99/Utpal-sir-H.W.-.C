@@ -1,15 +1,16 @@
 // Using Condition and Loop
+
 #include <stdio.h>
 int main()
 {
-    int num=101,sum;
+    int num=101,sum = 0;
     while(num<200)
     {
-        sum+=num;
-        num++;
-        if(sum%7==0)
-            {
-        printf("The number is %d\n",sum);
-        }
+        if(num%7==0)
+        {
+          sum+=num;
     }
+        num++;
+    }
+    printf("The number is %d\n",sum);
 }
