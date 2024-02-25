@@ -1,0 +1,32 @@
+//2. Write a program that keep reading a password until it is valid. For each wrong
+
+password read, write the message "invalid password ". When the password is
+
+typed correctly print the message "Access Permitted" and finished the program.
+
+The correct password is the number 2002.
+
+
+#include <stdio.h>
+void main(){
+    int a,b,c,d;
+    int count;
+    do
+    {
+    printf("Enter you password:");
+    scanf("%d %d %d %d",&a,&b,&c,&d);
+    if(a==2 && b==0 && c==0 && d==2)
+    {
+    printf("\nAccess Permitted ✔️\n");
+    count=1;
+    break;
+    }
+    else
+    {
+    printf("\nInvalid Password❌\n\n");
+    count=0;
+    }
+    count++;
+    }
+    while(count=1);
+}
