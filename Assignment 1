@@ -1,0 +1,35 @@
+//1. Make a program that reads five integer values. Count how many of these values
+
+are even.
+
+#include <stdio.h>
+void main(){
+    int num1,num2,num3,num4,num5,count1,count2,count3,count4,count5,count6;
+    scanf("%d %d %d %d %d",&num1,&num2,&num3,&num4,&num5);
+    if(num1%2==0)
+    {
+    count1=1;
+    }
+    if(num2%2==0)
+    {
+    count2=1;
+    }
+    if(num3%2==0)
+    {
+    count3=1;
+    }
+    if(num4%2==0)
+    {
+    count4=1;
+    }
+    if(num5%2==0)
+    {
+    count5=1;
+    }
+    else
+    {
+    count6=0;
+    }
+    printf("Total even number is: %d",count1+count2+count3+count4+count5+count6);
+    
+}
