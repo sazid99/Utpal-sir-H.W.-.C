@@ -63,3 +63,31 @@ int main(){
 }
 
 ##########################################################################################
+
+Using only while loop:
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int pass = 2002;
+    int passkey;
+
+    cout << "Enter your 4-digit password:" << endl;
+    cin >> passkey;
+
+    // Run while the password is incorrect
+    while (passkey != pass) {
+        if (passkey > 999 && passkey < 10000) {
+            cout << "Wrong password. Try Again!" << endl;
+        } else {
+            cout << "Enter a valid 4-digit password!" << endl;
+        }
+        cin >> passkey;
+    }
+
+    cout << "Right Password. Welcome Sazid" << endl;
+    return 0;
+}
+
+#########################################################################################
