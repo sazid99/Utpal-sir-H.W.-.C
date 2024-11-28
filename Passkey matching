@@ -28,7 +28,7 @@ void main(){
     }
     count++;
     }
-    while(count=1);
+    while(count==1);
 }
 
 
@@ -59,7 +59,7 @@ int main(){
             cout<<"Enter 4 digit valid password"<<endl;
         }
 
-    }while(count = 1);
+    }while(count == 1);
 }
 
 ##########################################################################################
