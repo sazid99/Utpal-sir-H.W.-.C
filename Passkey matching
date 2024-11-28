@@ -41,7 +41,6 @@ using namespace std;
 
 int main(){
     int pass = 2002;
-    int count;
     int passkey;
     do{
         cout<<"Enter your 4 digit password"<<endl;
@@ -49,17 +48,15 @@ int main(){
         if(passkey > 999 && passkey<10000){
             if(passkey == pass){
                 cout<< "Right Password. Welcome Sazid"<<endl;
-                count = 1;
                 break;
             }else{
                 cout<< "Wrong password. Try Again!"<<endl;
-                count=0;
             }
         }else{
             cout<<"Enter 4 digit valid password"<<endl;
         }
 
-    }while(count == 1);
+    }while(true);
 }
 
 ##########################################################################################
